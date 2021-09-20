@@ -1,0 +1,46 @@
+
+<div class="row">
+<div class="col-md-6 text-center">
+<h3><a href="/addSighting"><button type="submit" class="btn add btn-lg"> <p class="add-btn">ADD SIGHTING </p> </button></a> </h3>
+</div>
+<div class="col-md-6 text-center">
+<h3><a href="/addAnimal"><button type="submit" class="btn add btn-lg"> <p class="add-btn">ADD ANIMAL </p> </button></a> </h3>
+</div>
+<div class="col-sm">
+</div>
+</div>
+
+
+<div class="row">
+      <div class="col-sm">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><h2 class="header text-center sighting">Ranger Name</h2></th>
+            <th scope="col"><h2 class="header sighting">Update</h2></th>
+            <th scope="col"><h2 class="header sighting">Delete</h2></th>
+            <th scope="col"><h2 class="header sighting">Animals...</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          #foreach($sighting in $sightings)
+           <tr>
+            <td class="header text-center sighting"> $sighting.getName()</td>
+            <td><a href="/stylistsdit/$stylists.getId()"><button type="submit" class="btn add btn-lg "><p class="add-btn">Edit</p></button></a></td>
+            <td>
+             <form action="/stylists/$stylists.getId()/delete" method="post">
+               <a href="/"><button type="submit" class="btn delete btn-lg">
+                 <p class="add-btn">Delete</p></button>
+               </a>
+             </form>
+              </td>
+              <td><a href="/sightingDetails/$sighting.getId()"><button type="submit" class="btn add btn-lg "><p class="add-btn">Details</p></button></a></td>
+          </tr>
+          #end
+        </tbody>
+      </table>
+      </div>
+    </div>
+</div>
+
+

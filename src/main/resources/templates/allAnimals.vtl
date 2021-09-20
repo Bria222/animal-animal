@@ -1,0 +1,33 @@
+<div class="row">
+      <div class="col-sm">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><h2 class="header sighting">Stylist Name</h2></th>
+            <th scope="col"><h2 class="header sighting">Update</h2></th>
+            <th scope="col"><h2 class="header sighting">Delete</h2></th>
+            <th scope="col"><h2 class="header sighting">Details...</h2></th>
+          </tr>
+        </thead>
+        <tbody>
+          #foreach($animals in $animals)
+           <tr>
+            <td class="header sighting">$animals.getName()</td>
+            <td><a href="/stylistsdit/$stylists.getId()"><button type="submit" class="btn add btn-lg "><p class="add-btn">Edit</p></button></a></td>
+            <td>
+             <form action="/stylists/$stylists.getId()/delete" method="post">
+               <a href="/"><button type="submit" class="btn delete btn-lg">
+                 <p class="add-btn">Delete</p></button>
+               </a>
+             </form>
+              </td>
+              <td><a href="/stylists/$stylists.getId()"><button type="submit" class="btn add btn-lg "><p class="add-btn">Details</p></button></a></td>
+          </tr>
+          #end
+        </tbody>
+      </table>
+      </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 co">.col-md-4</div>
+    <div class="col-md-4 co">.col-md-4</div>
+    <div class="col-md-4">
+
+    <!-- Card -->
+    <div class="card container">
+
+        <div class="row text-center">
+
+            <!-- Default form login -->
+            <form class="text-center ADD  p-5" action="/addAnimal" method="post">
+
+                <p class="h4 mb-4">ADD ANIMAL</p>
+
+                <!-- Ranger name -->
+                <input type="name" id="name" name="name" class="form-control mb-4" placeholder="Name">
+
+                <!-- Animal id -->
+                   <label for="sightingId" class="add-btn"><span>Select Ranger</span></label>
+                       <select class="browser-default custom-select" id='sightingId' name='sightingId' type='sightingId'>
+                         <option selected>Rangers select menu</option>
+                          #foreach($sighting in $sightings)
+                            <option value="$sighting.getId()">$sighting.getName()</option>
+                          #end
+                       </select>
+                <!-- Sign in button -->
+                <button class="btn btn-add-animal btn-block my-4" type="submit"><span>ADD ANIMAL</span></button>
+
+            </form>
+            <!-- Default form login -->
+
+        </div>
+        <!-- Card -->
+
+    </div>
+  </div>
+</div>
+
+

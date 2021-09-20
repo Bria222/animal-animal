@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("b.jpg");
+
+  /* Full height */
+  height: 100%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-title{
+font-size: 50px;
+color: black;
+}
+
+.co{
+ opacity: 0.1;
+}
+
+.find{
+background-color: #ffffff;
+width: 80%;
+height:60px;
+}
+
+.card{
+background-color: #444444;
+}
+
+ span{
+ font-size:30px;
+ }
+
+a {
+  color: #78B5BC;
+  font-style: bold;
+}
+
+.ADD{
+width: 100%;
+}
+
+.btn-add-animal{
+color: white;
+background-color: #78B5BC;
+}
+
+.h4{
+color: white;
+  font-style: bold;
+  font-size:30px;
+}
+
+.sighting{
+font-weight: 900;
+ color: #ffffff;
+  font-style: bold;
+  font-size:30px;
+}
+
+.add {
+background-color: #78B5BC;
+}
+
+.add-btn{
+ color: #444444;
+ font-style: bold;
+    font-size:25px;
+}
+
+
+.delete{
+ color: #444444;
+ font-style: bold;
+ font-size:25px;
+ background-color: #D64933;
+}
+
+.location{
+ font-weight: 900;
+ color: #ffffff;
+   font-style: bold;
+   font-size:50px;
+}
